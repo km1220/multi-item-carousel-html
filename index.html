@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Ultra:400|Slabo+13px:400" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="./assets/css/global/_global.css">
+    <link rel="stylesheet" href="./assets/css//layout/header.css">
+    <link rel="stylesheet" href="./assets/css/layout/main.css">
+    <link rel="stylesheet" href="./assets/css/layout/footer.css">
+
+    <!-- =========== for carousel ================ -->
+    <!-- <link rel="stylesheet/less" type="text/css" href="./plugins/carousel/index.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script> -->
+    <link rel="stylesheet" href="./plugins/carousel/index.css">
+    <script src="./plugins/carousel/index.js"></script>
+</head>
+
+<body>
+    <style>
+        #root {
+            /* display: flex;
+            flex-direction: column; */
+
+            color: #202124;
+            text-size-adjust: 100%;
+            font-family: "Slabo 13px", serif;
+            font-weight: 400;
+            font-style: normal;
+
+            font-size: 16px;
+        }
+    </style>
+    <div id="root">
+        <header>
+            <div style="height: 100%; padding: 0;">
+                <img id="logo" src="./assets/imgs/_EM_logo.png">
+            </div>
+            <div style="flex-grow: 1;">
+                <h1 id="_site_title">ECLETIQUE MARSEILLE</h1>
+            </div>
+
+            <div>
+                <a href="#" class="header-link"> About Us </a>
+            </div>
+            <div>
+                <a href="#" class="header-link"> Find Us </a>
+            </div>
+        </header>
+
+        <div style="height: 64px; width: 100%;"></div>
+
+        <div id="main-container">
+            <div id="about-us">
+                <div style="margin: 80px 0;">
+                    <h1 class="site-title">
+                        <span>ECLETIQUE MARSEILLE</span>
+                    </h1>
+                    <div>
+                        <span class="__text-1 info-content">Cafe in Marseille</span>
+                    </div>
+                    <div style="margin-bottom: 24px;">
+                        <div class="__text-1 info-content">Opening at 6:00 AM</div>
+                    </div>
+                    <div>
+                        <a href="#info-container" class="__btn btn">
+                            <span>Contact Us</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="carousel-container-1" style="width: auto; margin-bottom: 20px;">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="./assets/imgs/bg/1.jpg" alt="1" style="width:100%;">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/imgs/bg/2.jpg" alt="2" style="width:100%;">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/imgs/bg/3.jpg" alt="3" style="width:100%;">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/imgs/bg/3.jpg" alt="4" style="width:100%;">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/imgs/bg/5.jpg" alt="5" style="width:100%;">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div id="carousel-container-2" style="width: auto;">
+                    <div class="carousel slide multi-item-carousel" id="theCarousel">
+                        <div class="carousel-inner">
+                            <!--  Example item start -->
+                            <div class="item active">
+                                <div class="col-xs-4"><a href="#1"><img src="./assets/imgs/bg/1.jpg"
+                                            class="img-responsive"></a></div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-4"><a href="#2"><img src="./assets/imgs/bg/2.jpg"
+                                            class="img-responsive"></a></div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-4"><a href="#3"><img src="./assets/imgs/bg/3.jpg"
+                                            class="img-responsive"></a></div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-4"><a href="#4"><img src="./assets/imgs/bg/4.jpg"
+                                            class="img-responsive"></a></div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-4"><a href="#5"><img src="./assets/imgs/bg/5.jpg"
+                                            class="img-responsive"></a></div>
+                            </div>
+                            <!--  Example item end -->
+                        </div>
+                        <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i
+                                class="glyphicon glyphicon-chevron-left"></i></a>
+                        <a class="right carousel-control" href="#theCarousel" data-slide="next"><i
+                                class="glyphicon glyphicon-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <h2 class="__title-2" style="margin: 32px 0 20px">About Us</h2>
+                <div class="__text-1">The best service, satisfied customers, delicious coffee ...</div>
+            </div>
+
+
+            <div id="find-us-panel">
+                <hr class="__divider">
+                <h2 class="__title-2">Find Us</h2>
+                <div class="g-map">
+                    <!-- <img src="./assets/g_map.jpg"> -->
+                    <!-- <div class="google-map-location"
+                        style="background-image:url('https://maps.googleapis.com/maps/api/staticmap?scale=1&amp;size=1600x900&amp;style=feature:poi.business|visibility:off&amp;style=feature:water|visibility:simplified&amp;style=feature:road|element:labels.icon|visibility:off&amp;style=feature:road.highway|element:labels|saturation:-90|lightness:25&amp;format=jpg&amp;language=en&amp;region=US&amp;markers=color:0x88b06a|40.7569206,-73.9933326&amp;zoom=16&amp;client=google-presto&amp;signature=3Aqamvst3UX8IeWj5PbmnKCcF28')"
+                        title="Map showing business location."></div> -->
+
+                    <a href="https://www.google.com/maps/search/542+9th+Avenue,+New+York,+NY/data=!3m1!4b1"
+                        target="_blank" itemprop="hasMap">
+                        <div class="google-map-location"
+                            style="background-image:url('https://maps.googleapis.com/maps/api/staticmap?scale=1&amp;size=1600x900&amp;style=feature:poi.business|visibility:off&amp;style=feature:water|visibility:simplified&amp;style=feature:road|element:labels.icon|visibility:off&amp;style=feature:road.highway|element:labels|saturation:-90|lightness:25&amp;format=jpg&amp;language=en&amp;region=US&amp;markers=color:0x88b06a|40.7569206,-73.9933326&amp;zoom=16&amp;client=google-presto&amp;signature=3Aqamvst3UX8IeWj5PbmnKCcF28')"
+                            title="Map showing business location."></div>
+                    </a>
+                </div>
+            </div>
+
+            <div id="social-link-panel">
+                <hr class="__divider">
+                <h2 class="__title-2">Social Link</h2>
+                <div id="social-link-bar">
+                    <a class="social-link" href="#g-mail">
+                        <img src="./assets/imgs/g-mail.png">
+                    </a>
+                    <a class="social-link" href="#instagram">
+                        <img src="./assets/imgs/instagram.png">
+                    </a>
+                    <a class="social-link" href="#telegram">
+                        <img src="./assets/imgs/telegram.png">
+                    </a>
+                    <a class="social-link" href="#discord">
+                        <img src="./assets/imgs/discord.png">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <hr class="__divider">
+                <h2 class="__title-2">Company Info</h2>
+
+                <div id="info-panel">
+                    <div class="col-sm-5">
+                        <h3 class="__title-3">Address</h3>
+                        <div>
+                            <a href="#" class="__btn btn">Get directions</a>
+                            <address>
+                                <div>542 9th Avenue</div>
+                                <div>New York, NY 10018</div>
+                                <div>USA</div>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <h3 class="__title-3">Business Hours</h3>
+                        <div>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th class="x2TOCf">Mon:</th>
+                                        <td class="o0m3Qb"><span class="WF8WNe">6:00 AM – 7:00 PM</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="x2TOCf">Tue:</th>
+                                        <td class="o0m3Qb"><span class="WF8WNe">6:00 AM – 7:00 PM</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="x2TOCf">Wed:</th>
+                                        <td class="o0m3Qb"><span class="WF8WNe">6:00 AM – 7:00 PM</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="x2TOCf">Thu:</th>
+                                        <td class="o0m3Qb"><span class="WF8WNe">6:00 AM – 7:00 PM</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="x2TOCf">Fri:</th>
+                                        <td class="o0m3Qb"><span class="WF8WNe">6:00 AM – 7:00 PM</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="x2TOCf">Sat:</th>
+                                        <td class="o0m3Qb"><span class="WF8WNe">6:00 AM – 7:00 PM</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="x2TOCf">Sun:</th>
+                                        <td class="o0m3Qb"><span class="WF8WNe">6:00 AM – 7:00 PM</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer-panel">
+        <div>
+            <a href="#"> Report abuse</a>
+        </div>
+        <div>
+            Header photo by <a href="#">Dino Rodriguez</a>
+        </div>
+        <div>
+            Powered by <a href="#">Google</a>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 64px;
+	padding: 0 66px;
+
+	width: 100%;
+	box-shadow: 0 0 5px grey;
+	position: fixed;
+	z-index: 50;
+
+	background-color: #fff;
+	color: #ebb946;
+	font-family: "Ultra", serif;
+}
+
+header>div {
+	padding: 0 20px;
+}
+
+header a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0
+}
+
+header #logo {
+	height: 100%;
+	/* padding: 0.75rem; */
+	padding: 1rem;
+}
+
+header #_site_title {
+	-webkit-font-smoothing: antialiased;
+	text-size-adjust: 100%;
+	font-weight: 400;
+	line-height: normal;
+	white-space: nowrap;
+	font-size: 22px;
+	font-family: "Ultra", serif;
+	-webkit-tap-highlight-color: transparent;
+	text-decoration: none;
+	cursor: pointer;
+	color: #ebb946;
+}
+
+header .header-link {
+	font-family: "Slabo 13px", serif;
+	font-weight: 400;
+
+	color: #ebb946;
+	text-decoration: none;
+}
